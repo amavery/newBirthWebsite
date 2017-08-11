@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cantata+One|Raleway');
+
 .jumbotron{
 
     height: 100vh;
@@ -8,8 +10,22 @@
     url('../../../images/gallery/whattoexpect.jpg');
     background-size: 100% 100%;
     display: table;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
     
+}
+
+.jumbotron h1{
+
+    
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 500%;
+
+
+}
+
+.inside h2,.btn{
+    
+    font-family: 'Cantata One', serif;
+
 }
 
 .row.expect{
@@ -71,6 +87,7 @@
 
     padding-left: 5%;
     padding-right: 5%;
+    font-family: 'Raleway', sans-serif;
 
 }
 
