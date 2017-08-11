@@ -1,33 +1,82 @@
-
-
 .jumbotron{
 
     height: 100vh;
     width: 100%;
     /*text-align: center;*/
     color: white;
-    background: linear-gradient(rgba(48, 41, 47, 1), rgba(48, 41, 47, 0.8)),
+    background: linear-gradient(rgba(164,204,65, 1), rgba(164,204,65, 0.5)),
     url('../../../images/gallery/whattoexpect.jpg');
     background-size: 100% 100%;
     display: table;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
     
 }
 
-.outside-table{
+.row.expect{
+
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+
+}
+
+.wte,
+.da,
+.sunday,
+.ns{
+
+    width: 100%;
+    display: table;
+    height: 50vh;
+    text-align: center;
+
+}
+
+.da,
+.ns{
+
+    color: white;
+    background-color: #A4CC41;
+
+}
+
+.ns{
+
+    margin-bottom: 2%;
+
+}
+
+.btn{
+
+    background-color: #30292F;
+    color: #A4CC41;
+}
+
+.inside{
 
     display: table-cell;
     vertical-align: middle;
 
 }
 
-.main{
+.outside-table{
 
-    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    
+
+}
+
+.inside p,.inside ul{
+
+    padding-left: 5%;
+    padding-right: 5%;
+
 }
 
 strong{
 
-    color: #A4CC41;
+    color: #30292F;
 }
 
 @media only screen and (min-width : 992px) {
@@ -36,8 +85,8 @@ strong{
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgba(48, 41, 47, 1), 
-      rgba(48, 41, 47, 0.8)
+      rgba(164,204,65, 1), 
+      rgba(164,204,65, 0.5)
     ),
     /* bottom, image */
     url("../../../images/gallery/whattoexpectvid.gif");
