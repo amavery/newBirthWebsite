@@ -12,6 +12,9 @@ import { WhatToExpectComponent } from './views/what-to-expect/what-to-expect.com
 import { GetInvolvedComponent } from './views/get-involved/get-involved.component';
 import { MediaComponent } from './views/media/media.component';
 
+import { VideoBackground } from '@squarespace/video-background';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,7 @@ import { MediaComponent } from './views/media/media.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
