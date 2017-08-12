@@ -106,10 +106,42 @@ strong,.btn{
       rgba(48, 41, 47, 0.8)
     ),
     /* bottom, image */
-    url("../../../images/gallery/getinvolved.gif");
-    background-size: 100% 100%;
+    /* url("../../../images/gallery/getinvolved.gif"); */
+    /* background-size: 100% 100%; */
 
 
 }
 
+}
+
+.video-parent{
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden;
+}
+
+.text-overlay{
+    display: table;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    z-index: 900;
+    width: 100vw;
+    height: inherit;
+    vertical-align: middle;
+    background-color: rgba(48, 41, 47, 0.8);
+    /* background-color: black; */
+}
+
+h1{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+
+.sqs-background-background{
+    width: 100vw;
+    height:inherit;
+    z-index:2 !important; 
+    overflow: hidden;
 }
