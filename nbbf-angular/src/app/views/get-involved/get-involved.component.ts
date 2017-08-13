@@ -16,7 +16,8 @@ export class GetInvolvedComponent implements OnInit {
   ngOnInit() {
     const config = {
       container: document.documentElement.querySelector('.sqs-video-background'),
-      url: 'https://www.youtube.com/watch?v=ZyS6twkhXF8&feature=youtu.be'
+      url: 'https://youtu.be/qzA8RVE6rzA'/*,
+      useCustomFallbackImage: true*/
     };
     const myVideoBackground = new VideoBackgroundRenderer(config);
   }
