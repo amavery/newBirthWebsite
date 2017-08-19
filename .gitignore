@@ -1,18 +1,18 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/nbbf-angular/dist
-/nbbf-angular/tmp
-/nbbf-angular/out-tsc
+/dist
+/tmp
+/out-tsc
 
 # dependencies
-/nbbf-angular/node_modules
+/node_modules
 
 # IDEs and editors
-/nbbf-angular/.idea
-/nbbf-angular.project
-/nbbf-angular.classpath
-/nbbf-angular.c9/
+/.idea
+.project
+.classpath
+.c9/
 *.launch
 .settings/
 *.sublime-workspace
@@ -25,17 +25,17 @@
 !.vscode/extensions.json
 
 # misc
-/nbbf-angular/.sass-cache
-/nbbf-angular/connect.lock
-/nbbf-angular/coverage
-/nbbf-angular/libpeerconnection.log
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
 npm-debug.log
 testem.log
-/nbbf-angular/typings
+/typings
 
 # e2e
-/nbbf-angular/e2e/*.js
-/nbbf-angular/e2e/*.map
+/e2e/*.js
+/e2e/*.map
 
 # System Files
 .DS_Store
