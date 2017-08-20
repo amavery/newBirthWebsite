@@ -1,5 +1,5 @@
  <!-- Start Nav Backed Header -->
-  <div class="nav-backed-header parallax" style="background-image:url(http://placehold.it/1280x635&amp;text=IMAGE+PLACEHOLDER);">
+  <div class="nav-backed-header parallax" style="background-image:url('images/gallery/camera.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -21,12 +21,12 @@
         </div>
         <div class="col-md-6">
           <div class="gallery-filter">
-            <ul class="nav nav-pills sort-source" data-sort-id="gallery" data-option-key="filter">
-              <li data-option-value="*" class="active"><a href="#"><i class="fa fa-th"></i> <span>Show All</span></a></li>
-              <li data-option-value=".format-image"><a href="#"><i class="fa fa-picture-o"></i> <span>Image</span></a></li>
-              <li data-option-value=".format-link"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-              <li data-option-value=".format-gallery"><a href="#"><i class="fa fa-camera"></i> <span>Slideshow</span></a></li>
-              <li data-option-value=".format-video"><a href="#"><i class="fa fa-play"></i> <span>Video</span></a></li>
+            <ul class="nav nav-pills sort-source">
+              <li [class.active]="mediaFilter=='*'"><a (click)="filterMedia('*')"><i class="fa fa-th"></i> <span>Show All</span></a></li>
+              <li [class.active]="mediaFilter=='sermon'"><a (click)="filterMedia('sermon')"><i class="fa fa-bullhorn"></i> <span>Sermons</span></a></li>
+              <li [class.active]="mediaFilter=='video'"><a (click)="filterMedia('video')"><i class="fa fa-play"></i><span>Video</span></a></li>
+              <li [class.active]="mediaFilter=='slideshow'"><a (click)="filterMedia('slideshow')"><i class="fa fa-camera"></i><span>Slideshow</span></a></li>
+              <li [class.active]="mediaFilter=='graphic'"><a (click)="filterMedia('graphic')"><i class="fa fa-picture-o"></i><span>Graphics</span></a></li>              
             </ul>
           </div>
         </div>
@@ -39,41 +39,21 @@
     <div id="content" class="content full">
       <div class="container">
         <div class="row">
-          <ul class="sort-destination" data-sort-id="gallery">
-            <li class="col-md-6 col-sm-6 grid-item post format-image">
-              <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-            </li>
-            <li class="col-md-6 col-sm-6 grid-item post format-image">
-              <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-            </li>
-            <li class="col-md-6 col-sm-6 grid-item post format-gallery">
-              <div class="grid-item-inner">
-                <div class="media-box">
-                  <div class="flexslider" data-autoplay="yes" data-pagination="yes" data-arrows="yes" data-style="slide" data-pause="yes">
-                    <ul class="slides">
-                      <li class="item"><a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[postname]"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
-                      <li class="item"><a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto[postname]"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
-                    </ul>
-                  </div>
+          <ul class="sort-destination">
+            <div *ngIf="filteredMedia.length<1; else hasContent" style="text-align: center">
+              No content yet. Check back later.
+            </div>
+            <ng-template #hasContent>
+              <li class="col-md-6 col-sm-6 grid-item post format-video media-box" *ngFor="let m of filteredMedia">
+                <div class="glow-over media-box" (click)="openDialog(m);">
+                  <i *ngIf="m.type=='video' || m.type=='sermon'; else slideshowIcon" class="glow-over-icon fa fa-play" style="display:inherit; margin-top:15px'"></i>
+                  <ng-template #slideshowIcon><i class="fa fa-image" aria-hidden="true" (click)="closeDialog()"></i></ng-template>
+                  <div style="color: white; font-size: 20px;">{{m.title}}</div>
                 </div>
-              </div>
-            </li>
-            <li class="col-md-6 col-sm-6 grid-item post format-link">
-              <div class="grid-item-inner"> <a href="http://www.google.com" target="_blank" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-            </li>
-            <li class="col-md-6 col-sm-6 grid-item post format-image">
-              <div class="grid-item-inner"> <a href="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-            </li>
-            <li class="col-md-6 col-sm-6 grid-item post format-link">
-              <div class="grid-item-inner"> <a href="http://www.google.com" target="_blank" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-            </li>
-            <li class="col-md-6 col-sm-6 grid-item post format-video">
-              <div class="grid-item-inner"> <a href="https://vimeo.com/19564018" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-            </li>
-            <li class="col-md-6 col-sm-6 grid-item post format-video">
-              <div class="grid-item-inner"> <a href="http://youtu.be/NEFfnbQlGo8" data-rel="prettyPhoto" class="media-box"> <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> </div>
-            </li>
-          </ul>
+                <img src="{{m.cover}}" alt="{{m.title}}">
+              </li>
+            </ng-template>
+          </ul>  
         </div>
       </div>
     </div>
