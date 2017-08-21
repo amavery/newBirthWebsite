@@ -13,6 +13,10 @@ export class MediaDialogComponent implements OnInit {
   media: any;
   source: string;
   config: Object;
+  iframeWidth: string = '100%';
+  iframeHeight: string ='100%';
+  imgWidth: string = '800px';
+  imgHeight: string ='450px';
 
   constructor(@Inject(MD_DIALOG_DATA) public data: any, 
       private elementRef: ElementRef,

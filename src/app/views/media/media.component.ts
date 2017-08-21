@@ -1,9 +1,9 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
-
 import { MdDialog } from '@angular/material';
 
 import { MediaDialogComponent } from '../../components/media-dialog/media-dialog.component';
+import { TestComponent } from '../../components/test/test.component';
 
 @Component({
   selector: 'app-media',
@@ -50,7 +50,6 @@ export class MediaComponent implements OnInit {
   openDialog(media: any){
     this.sanitizedSource = this.sanitizer.bypassSecurityTrustResourceUrl(media.source);
     this.modalService.open(MediaDialogComponent,{data:{media: media, source: this.sanitizedSource}}).afterClosed().subscribe(() =>{
-
     })
   }
 }

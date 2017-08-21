@@ -5,17 +5,16 @@
   <div>
     <iframe id="iFrameOnPage" 
       *ngIf="media.type=='video' || media.type=='sermon'; else slideshow"
-      [style.display]="source ? 'block' : 'hidden'" width="100%" height="100%"
+      [style.display]="source ? 'block' : 'hidden'" [width]="iframeWidth" [height]="iframeHeight"
       [src]="source">
     </iframe>
     <ng-template #slideshow>
         <swiper [config]="config">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" *ngFor="let slide of media.slides"><img [src]="slide.source" /></div>
+            <div class="swiper-wrapper text-align-center" [style.width]="imgWidth" [style.height]="imgHeight">
+            <!-- <div class="swiper-wrapper"> -->
+                <div class="swiper-slide" *ngFor="let slide of media.slides"><img [src]="slide.source"/></div>
             </div>
-            <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             </swiper>
