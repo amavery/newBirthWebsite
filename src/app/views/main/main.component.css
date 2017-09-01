@@ -33,26 +33,32 @@
 }
 
 .bottom-half{
+    background-color: rgba(0,0,0,0.4);
+    /* background-image: url('../../images/service.png'); */
+    position: relative;
+    opacity: 0.9;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    background-color: #30292F;
     height: 80vh;
     width: 100%;
     display: table;
-
 }
 
 .bottom-half-text{
 
-    display: table-cell;
+    display: table-row;
     vertical-align: middle;
-    padding-left: 5%;
+    padding: 5%;
     text-align: left;
 
 }
 
 .bottom-half-pictures{
 
-    display: table-cell;
+    display: table-row;
     vertical-align: middle;
     padding-right: 5%;
     text-align: right;
