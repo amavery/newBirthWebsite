@@ -34,13 +34,12 @@
 
 .bottom-half{
     background-color: rgba(0,0,0,0.4);
-    /* background-image: url('../../images/service.png'); */
-    position: relative;
-    opacity: 0.9;
+    background-image: url("../../../images/service.png");
+    /* position: relative; */
     /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
 
     height: 80vh;
     width: 100%;
@@ -79,4 +78,36 @@
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 100%;
 
+}
+
+@media only screen and (max-width : 480px) {
+    .padding-25{
+        padding: none;
+    }
+
+    .service-info{
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        color: white;
+        font-size: 150%;
+    }
+    
+}
+
+@media only screen and (min-width : 480px) {
+    .padding-25{
+        padding: 25px;
+    }
+
+    .service-info{
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        color: white;
+        font-size: 250%;
+    }
+    
+}
+
+.service-time{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+    font-size: 150%;
 }
