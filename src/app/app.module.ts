@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MdDialogModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+import { SwiperModule } from 'angular2-useful-swiper';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -11,9 +15,17 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { WhatToExpectComponent } from './views/what-to-expect/what-to-expect.component';
 import { GetInvolvedComponent } from './views/get-involved/get-involved.component';
 import { MediaComponent } from './views/media/media.component';
+import { TestComponent } from './components/test/test.component';
 
 import { VideoBackground } from '@squarespace/video-background';
+<<<<<<< HEAD:src/app/app.module.ts
 import { AboutUsComponent } from './views/about-us/about-us.component';
+=======
+import { MediaDialogComponent } from './components/media-dialog/media-dialog.component';
+import { AboutUsComponent } from './views/about-us/about-us.component';
+import { ComingSoonComponent } from './views/coming-soon/coming-soon.component';
+import { EventsComponent } from './views/events/events.component';
+>>>>>>> origin:src/app/app.module.ts
 
 
 @NgModule({
@@ -24,15 +36,27 @@ import { AboutUsComponent } from './views/about-us/about-us.component';
     WhatToExpectComponent,
     GetInvolvedComponent,
     MediaComponent,
+<<<<<<< HEAD:src/app/app.module.ts
     AboutUsComponent
+=======
+    MediaDialogComponent,
+    AboutUsComponent,
+    ComingSoonComponent,
+    EventsComponent,
+    TestComponent
+>>>>>>> origin:src/app/app.module.ts
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-  ],
+    MdDialogModule,
+    BrowserAnimationsModule,
+    SwiperModule
+    ],
   providers: [],
+  entryComponents: [MediaDialogComponent,TestComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

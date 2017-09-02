@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Cantata+One|Raleway');
 
 /*.jumbotron{
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin
     height: 100vh;
     width: 100%;*/
 /*text-align: center;*/
@@ -10,6 +13,7 @@
     url('../../../images/gallery/whattoexpect.jpg');
     background-size: 100% 100%;
     display: table;
+<<<<<<< HEAD
 
 }
 
@@ -20,6 +24,12 @@
     font-size: 500%;
 
 
+=======
+}
+.jumbotron h1{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 500%;
+>>>>>>> origin
 }*/
 
 .inside h2,.btn{
@@ -98,7 +108,10 @@ strong{
 
 /*@media only screen and (min-width : 992px) {
 .jumbotron{
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin
     background:*/
 /* top, transparent red, faked with gradient */
 /*    linear-gradient(
@@ -108,8 +121,11 @@ strong{
 /* bottom, image */
 /*    url("../../../images/gallery/whattoexpectvid.gif");
     background-size: 100% 100%;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin
 }
 }*/
 
@@ -169,7 +185,11 @@ img{
 }
 
 .bgimg-2 {
+<<<<<<< HEAD
   background-image: url("../../../images/sermon/pastor_brent.jpg");
+=======
+  background-image: url("../../../images/aboutpastor.png");
+>>>>>>> origin
   min-height: 400px;
 }
 
@@ -215,4 +235,8 @@ li
   background-position: 100% .4em;
   padding-right: .6em;
   margin: 1em 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin

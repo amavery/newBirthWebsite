@@ -42,7 +42,11 @@
 .asc a{
 
     color: #A4CC41;
+<<<<<<< HEAD:src/app/views/get-involved/get-involved.component.css
     text-decoration: none;
+=======
+    text-decoration: none; 
+>>>>>>> origin:src/app/views/get-involved/get-involved.component.css
 
 }
 
@@ -154,4 +158,8 @@ img{
         opacity: 0;
 
     }
+<<<<<<< HEAD:src/app/views/get-involved/get-involved.component.css
 }
+=======
+}
+>>>>>>> origin:src/app/views/get-involved/get-involved.component.css
