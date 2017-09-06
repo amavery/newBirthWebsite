@@ -82,6 +82,13 @@
 
 }
 
+#main p{
+
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
 @media only screen and (max-width : 992px) {
 #text-container{
 
