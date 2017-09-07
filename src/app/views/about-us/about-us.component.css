@@ -95,7 +95,7 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: url("../../../images/gallery/about_us.jpg");
+  background-image: url("../../../images/gallery/abouttop.jpg");
   background-size: 100% 100%;
 }
 
@@ -108,7 +108,7 @@
   width: 100%;
   height: inherit;
   vertical-align: middle;
-  background-color: rgba(164,204,65, 0.8);
+  background-color: rgba(47, 61, 123, 0.64);;
   /* background-color: black; */
 }
 
@@ -129,6 +129,8 @@
     text-transform: uppercase;
     letter-spacing: .3em;
     font-size: 400%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 img{
@@ -176,7 +178,7 @@ img{
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("../../../images/gallery/aboutbottom.jpg");
+  background-image: url("../../../images/gallery/aboutbottom2.jpg");
   height: 130vh;
   width: 100%;
   display: table;
@@ -222,7 +224,7 @@ li
 
 .square-container{
 
-  height: 100vh;
+  height: 100%;
   /*width: 100%;*/
   text-align: center;
   color: white;
@@ -329,7 +331,7 @@ li
 
 #about-pastor{
 
-  height: 80vh;
+  height: 80%;
   width: 100%;
   background-color: white;
   margin: 0 0 0 0;
@@ -353,15 +355,21 @@ li
 
 }
 
+#about-pastor h2{
+
+  font-size: 500% !important;
+
+}
+
 #about-pastor-content{
 
-  padding-top: 5%;
+  /*padding-top: 5%;*/
 
 }
 
 #about-pastor img{
 
-  max-height: inherit;
+  max-height: 100%;
   border-radius: 50%;
 
 }
@@ -385,7 +393,7 @@ all goes under here*/
   width: 100%;
   height: 80vh;
   overflow: hidden;
-  background-image: url("../../../images/gallery/about_us.jpg");
+  background-image: url("../../../images/gallery/abouttop.jpg");
   background-size: 100% 100%;
 }
 

@@ -98,4 +98,24 @@
 
 }
 
+#text-container h1{
+
+  font-size: 200%;
+
+}
+
+#text-container h3{
+
+  font-size: 100%;
+
+}
+
+#main p{
+
+  padding-left: 7%;
+  padding-right: 7%;
+
+}
+
+
 }
