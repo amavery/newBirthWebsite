@@ -128,6 +128,7 @@
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: .3em;
+    font-size: 400%;
 }
 
 img{
@@ -389,21 +390,15 @@ all goes under here*/
 }
 
 .text-overlay{
-  display: table;
-  position: absolute;
-  text-align: center;
-  left: 0;
-  z-index: 900;
-  width: 100%;
-  height: inherit;
-  vertical-align: middle;
-  background-color: rgba(164,204,65, 0.8);
-  /* background-color: black; */
+
+  height: 80vh;
+
 }
 
-.text-overlay img{
+.text-overlay h1{
 
-  display: none;
+  padding-top: 4%;
+  font-size: 200%;
 
 }
 
@@ -415,30 +410,29 @@ all goes under here*/
 
 #mob-div{
 
-  display: unset;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
 
 }
 
-.bgimg-4 .row{
+.bgimg-4 .row1,.bgimg-4 .row2,.bgimg-4 .row3,.bgimg-4 .row4{
 
   height: 20vh;
+  display: table;
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+  width: 100%;
 
 }
 
-.bgimg-4 .row h1{
-
-  padding-top: 2%
-
-}
-
-.bgimg-4 .row2,.bgimg-4 .row4{
+.bgimg-4 .row1,.bgimg-4 .row3{
 
   background-color: white;
 
 }
 
-.bgimg-4 .row2 h1,.bgimg-4 .row4 h1{
+.bgimg-4 .row1 h1,.bgimg-4 .row3 h1{
 
   color: black !important;
 
